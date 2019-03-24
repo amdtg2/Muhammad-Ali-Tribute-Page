@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<title>Aouni's new testing page</title>
+<style>
+   
+body
+{
+ background-color: white;
+  font-family: 'Lato';
+}
+/** navigation bar **/
+
+#page-wrapper {
+  position: relative;
+}
+li {
+  list-style: none;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+header
+{
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+}
+}
+.logo {
+  width: 33.4vw;
+}
+img
+{
+  width: 100px;
+    height: 75px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+  margin-right: 25px;
+    @media (max-width: 650px) {
+      margin: 0 auto;
+    }
+}
+}
+nav {
+  font-weight: 400;
+  
+  @media (max-width: 650px) {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+    
+    li {
+     padding-bottom: 5px; 
+    }
+  }
+}
+#submit
+  {
+    margin-top:15px;
+  }
+#email
+{
+  width: 250px;
+  height: 20px;
+}
+  ul 
+  {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
+  }
+}
+
+/** global classes styling **/
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/** Hero **/
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  margin-top: 60px;
+    }
+  h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+
+  input[type="email"] {
+    width: 400px;
+    padding: 5px;
+  }
+
+  input[type="submit"] {
+    max-width: 150px;
+    width: 200px;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: yellow;
+    
+    &:hover {
+      background-color: orange;
+      transition: background-color 1s;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    margin-top: 120px;
+  }
+}
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 1px outset;
+  border-radius: 6px;
+  background: gold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.grid {
+  display: flex;
+}
+  
+/** feature **/
+
+#features {
+  margin-top: 20px;
+  margin-left: -100px;
+ 
+
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+ .icon {
+    display: ;
+    align-items: center;
+    justify-content: left;
+    height: 125px;
+    width: 20vw;
+    margin-left: -20px;
+   margin-top: 10px;
+}
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 135px;
+    width: 120vw;
+    padding: 5px;
+
+    @media (max-width: 550px) {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    margin-top: 0;
+  }
+}
+#how-it-works {
+  
+  display: flex;
+  justify-content: center;
+  
+}
+#tenor, #bass, #valve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%  / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px
+}
+    .level {
+      background-color: lime;
+      color: black;
+      padding: 15px 0;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 10px;
+  width: 100%;
+}
+#how-it-works {
+  
+  display: flex;
+  justify-content: center;
+  
+
+    
+</style>
+<head>
+    <body>
+    <div id="page-wrapper">
+  <header id="header">
+    <div >
+       <img id="header-img" src="https://www.elegantthemes.com/blog/wp-content/uploads/2016/02/adobe-logo-hover-animation.gif" alt="a random logo" style="height: 70px;"/>
+    </div>
+    <div class="logo">
+      <p style="font-size: 25px;">Aouni's Testing Product!</p>
+    </div>
+
+    <nav id="nav-bar">
+    <ul>
+      <li><a class="nav-link" href="#features">Qualities</a></li>
+      <li><a class="nav-link" href="#how-it-works">Youtube Video</a></li>
+      <li><a class="nav-link" href="#pricing">Pricing</a></li>
+    </ul>
+  </nav>
+  </header>
+  <div class="container">
+
+</div>
+  
+<section id="hero">
+  <h2>Input your email to get the latest news on Aouni</h2>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input name="email" id="email" type="email" placeholder="Enter your email address" required style="margin-top: 10px;"/>
+    <br>
+    <input id="submit" type="submit" value="Get Started" class="btn">
+  </form>
+</section>
+
+<div class="container">
+  <section id="features">
+    <div class="grid">
+      <div class="icon">
+                <img src="http://icons.iconarchive.com/icons/icons8/ios7/512/Messaging-Cool-icon.png" style="height: 100px; width: 100px;">
+      </div>
+      <div class="desc">
+        <h2> Premium Quality</h2>
+        <p>I will be able to provide you with not only quality work, but a very refined customr service experience that can only be delivered from years of experience.</p>
+      </div>
+    </div>
+        <div class="grid" style="margin-top:50px;">
+      <div class="icon">
+                <img src="https://cdn2.vectorstock.com/i/thumb-large/70/51/stick-figure-stickman-icon-pictogram-simple-vector-18167051.jpg" style="height: 130px; width: 140px; margin-left: -12.5px;">
+      </div>
+      <div class="desc">
+        <h2> Leadership</h2>
+        <p>As someone who has been in a leadership position before, the most important quality, in my professional opinion, is taking the initiative. I can promise you that I can take the initiative to not only further my career, but further the career of others. After all there is no 'I' in team!</p>
+      </div>
+    </div>
+        <div class="grid" style="margin-top:50px;">
+      <div class="icon">
+                <img src="https://watermarked.cutcaster.com/cutcaster-photo-100788854-Stick-figure-holding-a-business-card.jpg" style="height: 130px; width: 85px; margin-left: 6px;">
+      </div>
+      <div class="desc">
+        <h2> Professionalism Without The Robotics </h2>
+        <p>Everybody wants someone who can be professional at times, but everybody also want someone who is capable of being friendly and energetic. As someone has experience with how to deal with certain types of people (both introverted and extroverted), I have the ability to not only communicate effectively to others, but to also bring out the best in others without crossing any lines.</p>
+      </div>
+    </div>
+  </section>
+  <br>
+      <div style="margin-top: 50px;justify-content: center;text-align: center;">
+      <h1>Here is an animated music video with a good song featuring a great anime</h1>
+        <h3>Song: Last one standing by Simple Plan</h3>
+        <h3>Anime: Hajime no ippo</h3>
+        <h5>This is just to show how I can embed YouTube videos into a webpage</h5>
+    </div>
+  
+  <section id="how-it-works" style="margin-top: 20px;display: flex;justify-content: center;">
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/ZWRcXKzHHLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+<section id="pricing" style="margin-top: 50px;justify-content: center;text-align: center;">
+  <div>
+      <h1>Pricing</h1>
+    <h3>The following option(s) are to show what salary I am expecting when given an oppurtunity</h3>
+
+    </div>
+   <center> <div id="tenor">
+      <div class="level">
+        Starting Salary
+      </div>
+      <h2>Negotiable</h2>
+      <h4>At the end of the day, we both are trying to make money.
+        All I want is to be given the oppurtunity, and ensure your business is doing well, so that both your company and my employment will stay in tact. </h4>
+
+
+      <button class="btn">Select</button>
+     <br>
+    </div>  </center>
+  </section>
+</div>
+</div>
+  <footer>
+    <center> <h3>Thank you for viewing this page!</h3></center>
+    <p style="text-align: right;">Aouni Damrah</p>
+  </footer>
+    
+    </body>
+
+</head>
+</html>

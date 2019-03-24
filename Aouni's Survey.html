@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey Page</title>
+    <style>
+body
+{
+   background-color: lemonchiffon;
+  text-align: center;
+  font-family: 'Raleway';
+}
+
+#title
+{
+  font-size: 60px;
+  text-align: center;
+  color: black;
+}
+#description
+{
+  font-size: 20px;
+}
+
+#number
+{
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  font-size: 11px;
+}
+#name-label
+{
+   display: inline-block;
+  text-align: right;
+  width: 48%;
+  font-size: 15px;
+}
+#email-label
+{
+    display: inline-block;
+  text-align: right;
+  width: 48%;
+  font-size: 15px;
+}
+#number-label
+{
+   display: inline-block;
+  text-align: right;
+  width: 48%;
+  font-size: 15px;
+}
+#submit
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 30px;
+  width: 100px;
+  border-radius: 20px;
+}
+#form-outer {
+  background-color: white;
+  border: 3px solid black;
+  margin: 0 auto;
+  border-radius: 7px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 10px;
+}
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+.input-field {
+  height: 15px;
+  width: 300px;
+  padding: 5px;
+  margin: 9px;
+  border: 1px solid blue;
+  border-radius: 4px;
+  
+}
+.rightTab 
+{
+  display: inline-block;
+  text-align: left;
+  width: 58.4%;
+  vertical-align: middle;
+}
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid blue;
+  border-radius: 2px;
+}
+userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  display: block;
+  padding-bottom: 10px;
+}
+    
+    </style>
+<body>
+<h1 id="title">Aouni's Survey Form</h1>
+<div id="form-outer">
+  <p id="description"> This is just an example of what I am capable of. Please fill out the information below if you wish to contact me, and when you submit it will send an email with the following information</p>
+<form id="survey-form" method="get" action="mailto:amdtg2@yahoo.com">
+<div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+  <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+        </div>
+    </div>
+<div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Enter your Age">
+      </div>
+    </div>
+  <div class="rowTab">
+      <div class="labels">
+        <label for="contact">Why are you inquiring to contact me?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="reason" class="dropdown">
+      <option value selected disabled>Select an option</option>
+      <option value="job">Job Oppurtunity</option>
+      <option value="personal">Personal Inquiry</option>
+      <option value="other">Other</option>
+    </select>
+      </div>
+    </div>
+      <div class="rowTab">
+      <div class="labels">
+        <label for="preference">* How are you liking the format of this page so far?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label><input name="radio-buttons" value="1"  type="radio" class="preference" >Love It!</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="2"  type="radio" class="preference" >It's okay, could be better.</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="2"  type="radio" class="preference" >Not a big fan...</label></li>
+        </ul>
+      </div>
+    </div>
+  <div class="rowTab">
+      <div class="labels">
+        <label for="football">Who is your favorite football team (just to add a little personal touch) </label>
+      </div>
+      <div class="rightTab">
+        <select id="football" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="Cowboys">Cowboys</option>
+      <option value="Not the Cowboys">Not the Cowboys</option>
+      <option value="I don't watch football">I don't watch football</option>
+    </select>
+      </div>
+    </div>
+  <div class="rowTab">
+      <div class="labels">
+        <label for="skills">What you are looking for when contacting me: </label>
+      </div>
+      <div class="rightTab">
+        <ul id="skills" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="skills">Team-Player</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Leadership</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="skills">Customer-Service Oriented</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="skills">Knowledgable Regarding Software</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="skills">Able To Communicate</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="skills">Efficiency</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="skills">Artistic</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="skills">Friendly Type Of Personality</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="skills">Additional Type of Skill</label></li>
+        </ul>
+      </div>
+    </div>
+  <div class="rowTab">
+      <div class="labels">
+        <label for="feedback">Any feedback or suggestions would be much appreciate!</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="feedback" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your feedback here..."></textarea>
+       </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</head>
+</html>
